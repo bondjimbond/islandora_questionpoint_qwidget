@@ -1,0 +1,4 @@
+name = Islandora Questionpoint Qwidget
+core = 7.x
+description = Displays a QuestionPoint Qwidget.
+package = Islandora Tools

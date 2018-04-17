@@ -1,0 +1,17 @@
+<?php
+/**
+ * @file
+ * Installation hooks for Islandora Questionpoint Qwidget.
+ */
+
+/**
+ * Implements hook_uninstall().
+ */
+function islandora_questionpoint_qwidget_uninstall() {
+  $vars = array(
+    islandora_questionpoint_qwidget_site_id,
+    islandora_questionpoint_qwidget_size,
+    islandora_questionpoint_qwidget_colour,
+  );
+  array_walk($vars, 'variable_del');
+}
